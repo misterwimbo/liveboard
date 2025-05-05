@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interface Élève - Tableau Virtuel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>">
+</head>
+<body class="student-page">
+  <header>
+    <h1>Tableau Virtuel - Interface Élève</h1>
+  </header>
+  
+  <main>
+    <div id="login" class="login-container">
+      <h2>Connexion</h2>
+      <div class="form-group">
+        <label for="nameInput">Votre nom:</label>
+        <input type="text" id="nameInput" placeholder="Prénom Nom" />
+        <div id="errorMsg" class="error-message"></div>
+      </div>
+      <button id="startBtn" class="start-btn">Démarrer</button>
+    </div>
+
+    <div id="canvasArea" class="canvas-container" style="display:none;">
+      <div class="tool-buttons">
+        <button id="pencilBtn" class="tool-btn">✏️ Crayon</button>
+        <button id="eraserBtn" class="tool-btn">🧽 Gomme</button>
+      </div>
+      <canvas id="studentCanvas" width="400" height="400"></canvas>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2025 Tableau Virtuel - WebSocket Canvas - wimbo</p>
+  </footer>
+  
+  <script src="script_student.js"></script>
+</body>
+</html>
